@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  NetworkPractice1
+//  ExternalLibrary
 //
-//  Created by Hyowon Choi on 2018. 2. 7..
-//  Copyright © 2018년 Hyowon Choi. All rights reserved.
+//  Created by NEXT on 2018. 1. 27..
+//  Copyright © 2018년 NEXT. All rights reserved.
 //
 
 import UIKit
