@@ -1,0 +1,6 @@
+framework module Pods_NetworkStudy {
+  umbrella header "Pods-NetworkStudy-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,15 @@
+PODS:
+  - CountdownLabel (3.0.0)
+  - LTMorphingLabel (0.5.6)
+
+DEPENDENCIES:
+  - CountdownLabel
+  - LTMorphingLabel
+
+SPEC CHECKSUMS:
+  CountdownLabel: 4534a68892b1deb73fda18702dfdc2c8444cec08
+  LTMorphingLabel: bdb51d4682e9822da89da6f567bd8aa456fd6650
+
+PODFILE CHECKSUM: 07e477b83e4503e4c37efdc9eb1a8c45b7d6e96a
+
+COCOAPODS: 1.4.0

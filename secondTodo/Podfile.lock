@@ -1,0 +1,15 @@
+PODS:
+  - GlitchLabel (2.0.0)
+  - Twinkle (0.3.0)
+
+DEPENDENCIES:
+  - GlitchLabel (~> 2.0.0)
+  - Twinkle (~> 0.3.0)
+
+SPEC CHECKSUMS:
+  GlitchLabel: 65773d1df358ef66c8daa40428eb79bd04e7a976
+  Twinkle: e30dc720c1b1b56a13b3b9952850b7d5030acd25
+
+PODFILE CHECKSUM: 25a24d9fe32974ed7bac55ddff1c82d8cda0a74d
+
+COCOAPODS: 1.4.0
