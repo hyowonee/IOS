@@ -1,0 +1,41 @@
+PODS:
+  - CRToast (0.0.9)
+  - DOFavoriteButton (0.0.4)
+  - DZNEmptyDataSet (1.8.1)
+  - ObjectMapper (3.1.0)
+  - Realm (3.1.1):
+    - Realm/Headers (= 3.1.1)
+  - Realm/Headers (3.1.1)
+  - RealmSwift (3.1.1):
+    - Realm (= 3.1.1)
+  - TisprCardStack (2.0.0)
+
+DEPENDENCIES:
+  - CRToast (~> 0.0.7)
+  - DOFavoriteButton (from `https://github.com/fumiyasac/DOFavoriteButton`)
+  - DZNEmptyDataSet (~> 1.8.1)
+  - ObjectMapper (~> 3.1)
+  - RealmSwift
+  - TisprCardStack (~> 2.0)
+
+EXTERNAL SOURCES:
+  DOFavoriteButton:
+    :git: https://github.com/fumiyasac/DOFavoriteButton
+
+CHECKOUT OPTIONS:
+  DOFavoriteButton:
+    :commit: 3a237a9eda88018ef36eb7e72bb0cc788ce62d37
+    :git: https://github.com/fumiyasac/DOFavoriteButton
+
+SPEC CHECKSUMS:
+  CRToast: 5a78c22b921c5ed3487488af605bc403a9c92fed
+  DOFavoriteButton: 866e15af173d2dd5233971a1f657a5f31d2491d5
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
+  RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
+  TisprCardStack: aac898f6c96298232c2931b3650ba2ca925ea742
+
+PODFILE CHECKSUM: 82302bd146465fb56e5492c87d84193fc52b3de3
+
+COCOAPODS: 1.4.0
