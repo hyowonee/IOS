@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         
         let loginButton = FBSDKLoginButton()
         loginButton.center = self.view.center
-        loginButton.readPermissions = ["public_profile", "email"]
+        loginButton.readPermissions = ["public_profile", "email"] // 권한 요청
         self.view.addSubview(loginButton)
         
         FBSDKProfile.loadCurrentProfile { (profile, error) in
