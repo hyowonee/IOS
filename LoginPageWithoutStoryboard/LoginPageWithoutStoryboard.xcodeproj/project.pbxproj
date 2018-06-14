@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5B629D900A3C39D416F7B2C5 /* Pods_LoginPageWithoutStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD8DCCD00918D681769A43C /* Pods_LoginPageWithoutStoryboard.framework */; };
-		EC81CE3C208E3A9100BBC9D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC81CE3B208E3A9100BBC9D8 /* AppDelegate.swift */; };
+		EC2DC25620983A78005B09C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DC25520983A78005B09C7 /* AppDelegate.swift */; };
+		EC3D056E20908A4200A10B3F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3D056D20908A4200A10B3F /* SettingViewController.swift */; };
 		EC81CE3E208E3A9100BBC9D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC81CE3D208E3A9100BBC9D8 /* ViewController.swift */; };
-		EC81CE41208E3A9100BBC9D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC81CE3F208E3A9100BBC9D8 /* Main.storyboard */; };
 		EC81CE43208E3A9200BBC9D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC81CE42208E3A9200BBC9D8 /* Assets.xcassets */; };
 		EC81CE46208E3A9200BBC9D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC81CE44208E3A9200BBC9D8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,10 +19,10 @@
 		76FDD9CAD7EBB382A919F5F1 /* Pods-LoginPageWithoutStoryboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginPageWithoutStoryboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginPageWithoutStoryboard/Pods-LoginPageWithoutStoryboard.release.xcconfig"; sourceTree = "<group>"; };
 		B2F06312E6E5DA8312339198 /* Pods-LoginPageWithoutStoryboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginPageWithoutStoryboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginPageWithoutStoryboard/Pods-LoginPageWithoutStoryboard.debug.xcconfig"; sourceTree = "<group>"; };
 		DFD8DCCD00918D681769A43C /* Pods_LoginPageWithoutStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginPageWithoutStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2DC25520983A78005B09C7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC3D056D20908A4200A10B3F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		EC81CE38208E3A9100BBC9D8 /* LoginPageWithoutStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginPageWithoutStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC81CE3B208E3A9100BBC9D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC81CE3D208E3A9100BBC9D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC81CE40208E3A9100BBC9D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC81CE42208E3A9200BBC9D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC81CE45208E3A9200BBC9D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC81CE47208E3A9200BBC9D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +40,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC3D056F20908A4900A10B3F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC81CE3D208E3A9100BBC9D8 /* ViewController.swift */,
+				EC3D056D20908A4200A10B3F /* SettingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		EC81CE2F208E3A9100BBC9D8 = {
 			isa = PBXGroup;
 			children = (
@@ -61,9 +70,8 @@
 		EC81CE3A208E3A9100BBC9D8 /* LoginPageWithoutStoryboard */ = {
 			isa = PBXGroup;
 			children = (
-				EC81CE3B208E3A9100BBC9D8 /* AppDelegate.swift */,
-				EC81CE3D208E3A9100BBC9D8 /* ViewController.swift */,
-				EC81CE3F208E3A9100BBC9D8 /* Main.storyboard */,
+				EC2DC25520983A78005B09C7 /* AppDelegate.swift */,
+				EC3D056F20908A4900A10B3F /* Controller */,
 				EC81CE42208E3A9200BBC9D8 /* Assets.xcassets */,
 				EC81CE44208E3A9200BBC9D8 /* LaunchScreen.storyboard */,
 				EC81CE47208E3A9200BBC9D8 /* Info.plist */,
@@ -151,7 +159,6 @@
 			files = (
 				EC81CE46208E3A9200BBC9D8 /* LaunchScreen.storyboard in Resources */,
 				EC81CE43208E3A9200BBC9D8 /* Assets.xcassets in Resources */,
-				EC81CE41208E3A9100BBC9D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,22 +223,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC2DC25620983A78005B09C7 /* AppDelegate.swift in Sources */,
 				EC81CE3E208E3A9100BBC9D8 /* ViewController.swift in Sources */,
-				EC81CE3C208E3A9100BBC9D8 /* AppDelegate.swift in Sources */,
+				EC3D056E20908A4200A10B3F /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EC81CE3F208E3A9100BBC9D8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC81CE40208E3A9100BBC9D8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC81CE44208E3A9200BBC9D8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -365,7 +365,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A33L9G529Z;
 				INFOPLIST_FILE = LoginPageWithoutStoryboard/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = hyowonee.LoginPageWithoutStoryboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -381,7 +384,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A33L9G529Z;
 				INFOPLIST_FILE = LoginPageWithoutStoryboard/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = hyowonee.LoginPageWithoutStoryboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

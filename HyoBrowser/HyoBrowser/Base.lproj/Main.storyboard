@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14111" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HyoBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="q9Y-Ri-twr">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wiA-Co-7j8"/>
+                                </connections>
+                            </searchBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tyJ-3B-5c3">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="뒤로가기" id="EeR-Hu-BPH">
+                                        <connections>
+                                            <action selector="back" destination="BYZ-38-t0r" id="rvw-zK-EtW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="앞으로가기" id="jTM-F4-fBy">
+                                        <connections>
+                                            <action selector="forward" destination="BYZ-38-t0r" id="Jmb-Ml-9Zc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X3l-sQ-ytW">
+                                <rect key="frame" x="0.0" y="76" width="375" height="547"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="X3l-sQ-ytW" firstAttribute="top" secondItem="q9Y-Ri-twr" secondAttribute="bottom" id="AuC-qU-9al"/>
+                            <constraint firstItem="tyJ-3B-5c3" firstAttribute="top" secondItem="X3l-sQ-ytW" secondAttribute="bottom" id="Iku-Qa-pLo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X3l-sQ-ytW" secondAttribute="trailing" id="Sap-um-N8y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tyJ-3B-5c3" secondAttribute="bottom" id="SrX-27-zCS"/>
+                            <constraint firstItem="X3l-sQ-ytW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bKX-7Z-mMt"/>
+                            <constraint firstAttribute="trailing" secondItem="q9Y-Ri-twr" secondAttribute="trailing" id="cmR-9t-r9B"/>
+                            <constraint firstItem="q9Y-Ri-twr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fpV-bK-Yaz"/>
+                            <constraint firstAttribute="trailing" secondItem="tyJ-3B-5c3" secondAttribute="trailing" id="kWU-4i-Fnh"/>
+                            <constraint firstItem="q9Y-Ri-twr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rXm-U6-CKS"/>
+                            <constraint firstItem="tyJ-3B-5c3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vho-he-BGj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="q9Y-Ri-twr" id="Iny-4M-gbq"/>
+                        <outlet property="searchDisplayController" destination="TT0-TR-cSG" id="oCb-cK-nQW"/>
+                        <outlet property="webView" destination="X3l-sQ-ytW" id="AdD-yc-V0r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="TT0-TR-cSG">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="olP-g9-hoV"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="Mze-8j-nkD"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="62v-Jg-eMb"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="evW-41-tkA"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+        </scene>
+    </scenes>
+</document>

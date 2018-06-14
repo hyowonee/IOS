@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         
         self.picker.sourceType = .photoLibrary // 방식 선택. 앨범에서 가져오는걸로^^
         self.picker.allowsEditing = false // 수정가능하게 할지 선택. 하지만 false
-        self.picker.delegate = self // picker delegate
+        self.picker.delegate = self // picker delegate.seas
     }
     
     @objc func pickImage() {

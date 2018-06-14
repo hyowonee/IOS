@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TDDExample/ViewControllers/PostListViewController.swift"
+            timestampString = "550667115.913467"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "fetchPosts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TDDExample.PostListViewController.fetchPosts() -&gt; ()"
+                  moduleName = "TDDExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hyowonee/Hyowon/xcode/TDDExample/TDDExample/ViewControllers/PostListViewController.swift"
+                  timestampString = "550667120.36066"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "761">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Moya.Response) -&gt; Swift.Array&lt;TDDExample.Post&gt; in TDDExample.PostListViewController.fetchPosts() -&gt; ()"
+                  moduleName = "TDDExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hyowonee/Hyowon/xcode/TDDExample/TDDExample/ViewControllers/PostListViewController.swift"
+                  timestampString = "550667120.365628"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "25">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
